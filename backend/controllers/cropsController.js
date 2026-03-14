@@ -35,8 +35,20 @@ const createCrop = (req, res) => {
   });
 };
 
+const updateCrop = (req, res) => {
+  const id = req.params.id;
+  const updatedData = req.body;
+
+  res.json({
+    message: "Crop updated successfully",
+    id: id,
+    data: updatedData,
+  });
+};
+
 module.exports = {
   getCrops,
   getCropById,
   createCrop,
+  updateCrop,
 };
