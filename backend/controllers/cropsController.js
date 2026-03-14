@@ -26,7 +26,17 @@ const getCropById = (req, res) => {
   res.json(crop);
 };
 
+const createCrop = (req, res) => {
+  const newCrop = req.body;
+
+  res.status(201).json({
+    message: "Crop created successfully",
+    data: newCrop,
+  });
+};
+
 module.exports = {
   getCrops,
   getCropById,
+  createCrop,
 };

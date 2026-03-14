@@ -4,6 +4,8 @@ const cropsRoutes = require("./routes/crops");
 const app = express();
 const PORT = 3000;
 
+app.use(express.json());
+
 app.get("/", (req, res) => {
   res.send("Farm Data Management API is running 🌱");
 });
