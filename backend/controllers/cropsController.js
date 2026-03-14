@@ -46,9 +46,19 @@ const updateCrop = (req, res) => {
   });
 };
 
+const deleteCrop = (req, res) => {
+  const id = req.params.id;
+
+  res.json({
+    message: "Crop deleted successfully",
+    id: id,
+  });
+};
+
 module.exports = {
   getCrops,
   getCropById,
   createCrop,
   updateCrop,
+  deleteCrop,
 };
