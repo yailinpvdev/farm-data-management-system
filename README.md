@@ -30,14 +30,6 @@ This project demonstrates a basic CRUD backend built with **Node.js** and **Expr
 
 ![Project Structure](docs/project-structure.png)
 
-backend
-├ controllers
-│ └ cropsController.js
-├ routes
-│ └ crops.js
-├ server.js
-└ package.json
-
 ---
 
 # 📡 API Endpoints
